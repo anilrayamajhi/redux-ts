@@ -10,14 +10,12 @@ const RepositoriesList: React.FC = () => {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     searchRepositories(term);
-    console.log("HERE", term, data);
   };
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTerm(event.target.value);
   };
 
-  console.log("data: ", term, data);
   return (
     <div>
       <form onSubmit={onSubmit}>
